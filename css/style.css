@@ -3,7 +3,7 @@ html {
   font-family: 'IBM Plex Serif', serif;
 }
 
-h1, h2, h3, h4, h5, h6, .button {
+h1, h2, h3, h4, h5, h6, .median__text, .button {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
@@ -201,9 +201,10 @@ section {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.median h4 {
+.median__text {
   line-height: 1;
   margin: 0 1em 0 0;
+  font-weight: 500;
 }
 
 .median .partner-logo {
@@ -286,4 +287,13 @@ section {
 
 .cta h2 {
   margin-bottom: 0.5em !important;
+}
+
+.sr-only{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
 }
