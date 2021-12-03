@@ -15,6 +15,17 @@ p {
   .column {
     grid-column: span 12 !important;
   }
+  .columns {
+    grid-gap: 0 !important;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+  .button:first-of-type {
+    margin-right: 0 !important;
+    margin-bottom: 1em !important;
+}
   .cover {
     padding-top: 2em;
   }
@@ -23,6 +34,10 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .youtube-embed {
+    margin-top: 2em !important;
+
   }
 }
 
@@ -80,6 +95,7 @@ footer .partner-logo img {
 
 section {
   padding: 4em 0;
+  color: #462f13;
 }
 
 .columns {
@@ -154,10 +170,10 @@ section {
   padding-bottom: 6em;
 }
 
-.cover h2 {
+.cover h1 {
   color: #fff6eb;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .median {
@@ -219,6 +235,7 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
+  white-space: nowrap;
 }
 
 .button:first-of-type {
@@ -234,4 +251,18 @@ section {
 .button--outline:hover {
   background: #f4e6d6;
   color: #462f13;
+}
+
+.cta {
+  text-align: center;
+  margin-bottom: 2em;
+  color: #fff6eb;
+}
+
+.cta h2, .cta p {
+  margin-top: 0 !important;
+}
+
+.cta h2 {
+  margin-bottom: 0.5em !important;
 }
